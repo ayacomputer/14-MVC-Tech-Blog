@@ -29,9 +29,17 @@
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ms-auto py-4 py-lg-0">
                     <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="index.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="about.html">Dashboard</a></li>
-                    <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="post.html">Login</a></li>
-                    <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="contact.html">Logout</a></li>
+                    {{#if logged_in}}
+                    <li class="nav-item">
+                        <a href="/dashboard" class="nav-link px-lg-3 py-3 py-lg-4">Dashboard</a>
+                    </li>
+                    <li class="nav-item"><button class="no-button nav-link px-lg-3 py-3 py-lg-4"
+                            id="logout">logout</button></li>
+                    {{else}}
+                    <li class="nav-item"> <a a class="nav-link px-lg-3 py-3 py-lg-4" href="/login">login</a></li>
+                    {{/if}}
+                    <li class="nav-item"><button class="nav-link px-lg-3 py-3 py-lg-4 no-button"
+                            id="logout">Logout</button></li>
                 </ul>
             </div>
         </div>

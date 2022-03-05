@@ -1,0 +1,17 @@
+[
+    {
+        "name": "Mickey Mouse",
+        "email": "mm@gmail.com",
+        "password": "password12345"
+    },
+    {
+        "name": "Minnie Mouse",
+        "email": "mimo@gmail.com",
+        "password": "password23456"
+    },
+    {
+        "name": "Donald Duck",
+        "email": "dd0@gmail.com",
+        "password": "password6789"
+    }
+]

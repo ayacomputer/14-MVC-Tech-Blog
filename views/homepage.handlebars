@@ -1,9 +1,8 @@
 {{#each blogs as |blog|}}
 <div class="col-md-10 col-lg-8 col-xl-7">
     <div class="post-preview">
-        <a href="post.html">
+        <a href="/blog/{{blog.id}}">
             <h2 class="post-title">{{title}}</h2>
-            <h3 class="post-subtitle">{{subtitle}}</h3>
         </a>
         <p class="post-meta">
             Posted by {{name}} on {{date}}
