@@ -4,7 +4,7 @@ const withAuth = require('../utils/auth');
 
 router.get('/', async (req, res) => {
     try {
-        const projectData = await Blog.findAll({
+        const blogData = await Blog.findAll({
             include: [
                 {
                     model: User,
