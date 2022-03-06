@@ -16,6 +16,25 @@ router.post('/', withAuth, async (req, res) => {
     }
 });
 
+router.get('/edit/:id', withAuth, async (req, res) => {
+    try {
+        const updatedBlogData = await Blog.findByPk({
+            where: {
+                id: req.params.id
+            }
+        });
+
+        if (!updatedBlogData) {
+            res.status(404).json({ message: 'No blog found with this id!' });
+            return;
+        }
+        res.status(200).json(updatedBlogData);
+    } catch (err) {
+        console.log(err);
+        res.status(400).json(err);
+    }
+});
+
 router.put('/edit/:id', withAuth, async (req, res) => {
     try {
         const updatedBlogData = await Blog.update({

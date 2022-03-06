@@ -4,8 +4,12 @@ const updateHandler = async (event) => {
     const title = document.querySelector('#title').value.trim();
     const content = document.querySelector('#content').value.trim();
 
+    var str = window.location.pathname;
+    var n = str.lastIndexOf('/');
+    var blog_id = str.substring(n + 1);
+
     if (title && content) {
-        const response = await fetch(`/api/blogs`, {
+        const response = await fetch(`/api/blog/edit/${blog_id}`, {
             method: 'PUT',
             body: JSON.stringify({ title, content }),
             headers: {
