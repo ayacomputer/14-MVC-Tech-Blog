@@ -44,7 +44,7 @@ router.post('/', async (req, res) => {
 
 router.delete('/', async (req, res) => {
     try {
-        const blogData = Blog.destroy({
+        const blogData = await Blog.destroy({
             where: {
                 id: req.params.id
             }
