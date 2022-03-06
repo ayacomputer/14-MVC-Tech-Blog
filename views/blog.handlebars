@@ -4,7 +4,17 @@
         <p>Posted by {{user.name}} on {{format_date date_created}}</p>
         <div class="text-left">{{content}}</div>
     </div>
-    <div class="">
-
+    <div class="comments">
+        {{#each blogs as |blog|}}
+        <section class="comment_container">
+            <div class="comment_info">
+                {{user.username}} on {{format_date date_commented}}
+            </div>
+            <div class="comment">
+                {{comment}}
+            </div>
+        </section>
+        {{/each}}
     </div>
+
 </div>
