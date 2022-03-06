@@ -33,18 +33,14 @@
             {{#if comments.length}}
             {{#each comments as |comment|}}
             <hr class="my-4" />
-            <section class="comment_container row">
-                <div class="col-md-11">
+            <section class="comment_container">
+                <div class="">
                     <div class="comment_info">
                         {{user.name}} on {{format_date date_commented}}
                     </div>
                     <div class="comment">
-                        {{comment}}
+                        {{comment.comment}}
                     </div>
-
-                </div>
-                <div class="col-md-1">
-                    <button class="btn btn-sm btn-danger" data-id="{{blog.id}}">DELETE</button>
                 </div>
             </section>
             {{/each}}
@@ -62,3 +58,5 @@
 
 
     </div>
+
+    <script src="/js/comment.js"></script>

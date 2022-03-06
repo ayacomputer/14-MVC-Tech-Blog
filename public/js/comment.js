@@ -2,10 +2,10 @@ const commentFormHandler = async (event) => {
     event.preventDefault();
 
     const name = document.querySelector('#name_comment').value.trim();
-    const comment = document.querySelector('#comment').value.trim();
+    const comment = document.querySelector('#comment-input').value.trim();
 
     if (name && comment) {
-        const response = await fetch(`/api/blogs`, {
+        const response = await fetch('/api/comments', {
             method: 'POST',
             body: JSON.stringify({ name, comment }),
             headers: {
@@ -18,29 +18,11 @@ const commentFormHandler = async (event) => {
         } else {
             alert('Failed to post comment');
         }
-    }
-};
 
-const deleteButtonHandler = async (event) => {
-    if (event.target.hasAttribute('data-id')) {
-        const id = event.target.getAttribute('data-id');
 
-        const response = await fetch(`/api/blogs/${id}`, {
-            method: 'DELETE',
-        });
-
-        if (response.ok) {
-            document.location.replace('/dashboard');
-        } else {
-            alert('Failed to delete comment');
-        }
     }
 };
 
 document
     .querySelector('.comment-form')
     .addEventListener('submit', commentFormHandler);
-
-document
-    .querySelector('.comment-list')
-    .addEventListener('click', deleteButtonHandler);
