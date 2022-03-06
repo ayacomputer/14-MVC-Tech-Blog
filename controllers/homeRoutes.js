@@ -53,6 +53,30 @@ router.get('/blog/:id', async (req, res) => {
     }
 });
 
+
+router.get('/blog/edit/:id', async (req, res) => {
+    try {
+        const updatingBlogData = await Blog.findByPk(req.params.id, {
+            include: [
+                {
+                    model: User,
+                    attributes: ['name'],
+                },
+            ],
+        });
+
+        const updatingBlog = updatingBlogData.get({ plain: true });
+        console.log(updatingBlog);
+        res.render('update', {
+            ...updatingBlog,
+            logged_in: req.session.logged_in
+        });
+    } catch (err) {
+        res.status(500).json(err);
+    }
+});
+
+
 router.get('/login', (req, res) => {
     if (req.session.logged_in) {
         res.redirect('/dashboard');
