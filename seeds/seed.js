@@ -20,7 +20,9 @@ const seedDatabase = async () => {
         });
     }
 
-
+    await Comment.bulkCreate(commentData, {
+        individualHooks: true,
+    })
     process.exit(0);
 };
 
