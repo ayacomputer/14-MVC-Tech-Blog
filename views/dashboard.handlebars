@@ -23,10 +23,10 @@
         </form>
     </div>
 
-    {{#if blog.length}}
+
     <div class="col-md-6 blog-list">
         <h3>Your Posts:</h3>
-
+        {{#if blog.length}}
         {{#each blogs as |blog|}}
         <div class="row mb-2">
             <div class="col-md-8">
@@ -37,8 +37,15 @@
             </div>
         </div>
         {{/each}}
+        {{/if}}
+
+        {{#else}}
+        <h3>No post yet</h3>
+        {{/else}}
     </div>
-    {{/if}}
+
+
+
 </div>
 
-<script src="./js/dashboard.js"></script>
+<script src="/js/dashboard.js"></script>

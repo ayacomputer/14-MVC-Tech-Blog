@@ -16,23 +16,23 @@
     color: var(--darkColor);
   }
 
-  html {
+   body, nav, a, .nav-link {
     font-family: 'Nunito','Outfit', sans-serif;
-    font-size: 62.5%;
+    /* font-size: 62.5%; */
+    /* background-color: var(--darkColor);  */
+    /* color: var(--lightColor);  */
     box-sizing: border-box;
 }
 
-body {
+/* body {
     font-family: 'Nunito','Outfit', sans-serif;
     font-size: 1.75rem;
-    /* line-height: 1.5; */
-    background-color: var(--darkColor);
-    color: var(--lightColor);
-    text-align: center;
-    margin: 0;
-  }
+    line-height: 1.5;
+     text-align: center; 
+     margin: 0; 
+   }
 
 .title {
     font-family: 'Comforter Brush','Nunito','Outfit', sans-serif;
-    color: var(--darkColor);
-}
+  color: var(--darkColor); 
+}   */
