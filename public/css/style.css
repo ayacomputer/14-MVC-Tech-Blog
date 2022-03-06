@@ -25,7 +25,7 @@
 body {
     font-family: 'Nunito','Outfit', sans-serif;
     font-size: 1.75rem;
-    line-height: 1.5;
+    /* line-height: 1.5; */
     background-color: var(--darkColor);
     color: var(--lightColor);
     text-align: center;
