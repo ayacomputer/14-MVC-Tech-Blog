@@ -20,6 +20,7 @@ router.post('/', withAuth, async (req, res) => {
                 blog_id: req.body.blog_id,
                 user_id: req.session.user_id,
             })
+            console.log(newComment);
             res.status(200).json(newComment);
         }
 

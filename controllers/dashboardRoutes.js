@@ -3,26 +3,25 @@ const sequelize = require('../config/connection');
 const { Blog, User, Comment } = require('../models');
 const withAuth = require('../utils/auth');
 
+
 router.get('/', withAuth, async (req, res) => {
     try {
-        const userBlogData = await Blog.findAll({
-            where: {
-                user_id: req.session.user_id
-            },
-            include: [{ model: Blog }, { model: User }, { model: Comment }],
+        const userData = await User.findByPk(req.session.user_id, {
+            attributes: { exclude: ['password'] },
+            include: [{ model: Blog }],
         });
 
-        const userBlogs = userBlogData.map((userBlog) => userBlog.get({ plain: true }));
-        res.status(200).json(userBlogs);
-
+        const user = userData.get({ plain: true });
+        console.log(user);
         res.render('dashboard', {
-            ...userBlog,
+            ...user,
             logged_in: true
         });
     } catch (err) {
         res.status(500).json(err);
     }
 });
+
 
 router.post('/', async (req, res) => {
     try {
