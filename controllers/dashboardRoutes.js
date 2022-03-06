@@ -9,7 +9,7 @@ router.get('/', withAuth, async (req, res) => {
             where: {
                 user_id: req.session.user_id
             },
-            include: [{ model: Blog }, { model: Comment }],
+            include: [{ model: Blog }, { model: User }, { model: Comment }],
         });
 
         const userBlogs = userBlogData.map((userBlog) => userBlog.get({ plain: true }));
