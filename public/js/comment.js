@@ -4,17 +4,21 @@ const commentFormHandler = async (event) => {
     const name = document.querySelector('#name_comment').value.trim();
     const comment = document.querySelector('#comment-input').value.trim();
 
+    var str = window.location.pathname;
+    var n = str.lastIndexOf('/');
+    var blog_id = str.substring(n + 1);
+
     if (name && comment) {
         const response = await fetch('/api/comments', {
             method: 'POST',
-            body: JSON.stringify({ name, comment }),
+            body: JSON.stringify({ name, comment, blog_id }),
             headers: {
                 'Content-Type': 'application/json',
             },
         });
 
         if (response.ok) {
-            document.location.replace('/blog');
+            document.location.replace(`/blog/${blog_id}`);
         } else {
             alert('Failed to post comment');
         }

@@ -8,6 +8,7 @@ router.get('/', withAuth, async (req, res) => {
         const comments = commentData.map((comment) => comment.get({ plain: true }));
         res.status(200).json(comments);
     } catch (err) {
+        console.log(err);
         res.status(500).json(err);
     }
 });
@@ -24,6 +25,7 @@ router.post('/', withAuth, async (req, res) => {
             res.status(200).json(newComment);
         }
     } catch (err) {
+        console.log(err);
         res.status(500).json(err);
     }
 });
@@ -43,6 +45,7 @@ router.delete('/:id', withAuth, async (req, res) => {
         }
 
     } catch (err) {
+        console.log(err);
         res.status(500).json(err);
     }
 
