@@ -33,7 +33,7 @@ Comment.init(
             defaultValue: DataTypes.NOW,
         },
         comment: {
-            type: DataTypes.STRING,
+            type: DataTypes.STRING(500),
             allowNull: false,
             validate: {
                 len: [2]

@@ -1,36 +1,30 @@
 [
     {
-        "id": "1",
         "user_id": "1",
         "blog_id": "1",
         "comment": "Awesome!"
     },
     {
-        "id": "1",
         "user_id": "1",
         "blog_id": "1",
         "comment": "Awesome!"
     },
     {
-        "id": "2",
         "user_id": "2",
         "blog_id": "1",
         "comment": "Very informative!"
     },
     {
-        "id": "3",
         "user_id": "2",
         "blog_id": "3",
         "comment": "Thank you for the info!"
     },
     {
-        "id": "4",
         "user_id": "1",
         "blog_id": "3",
         "comment": "I agree with that!"
     },
     {
-        "id": "5",
         "user_id": "1",
         "blog_id": "1",
         "comment": "Nicely said!"
