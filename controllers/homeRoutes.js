@@ -64,7 +64,6 @@ router.get('/blog/edit/:id', async (req, res) => {
                 },
             ],
         });
-
         const updatingBlog = updatingBlogData.get({ plain: true });
         console.log(updatingBlog);
         res.render('update', {
