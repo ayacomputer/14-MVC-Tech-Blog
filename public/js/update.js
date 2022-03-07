@@ -9,7 +9,7 @@ const updateHandler = async (event) => {
     var blog_id = str.substring(n + 1);
 
     if (title && content) {
-        const response = await fetch(`/api/blog/edit/${blog_id}`, {
+        const response = await fetch(`/api/blogs/edit/${blog_id}`, {
             method: 'PUT',
             body: JSON.stringify({ title, content }),
             headers: {
