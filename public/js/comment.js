@@ -1,6 +1,7 @@
 const commentFormHandler = async (event) => {
     event.preventDefault();
 
+    // const name = document.querySelector('#name_comment').value.trim();
     const comment = document.querySelector('#comment-input').value.trim();
 
     var str = window.location.pathname;
