@@ -47,8 +47,7 @@
  ## About The Project
 
 
- ![ProductScreen Shot](./assets/product.gif)
-
+ ![ProductScreen Shot](public/product.png)
 
 This is a CMS-style tech blog site where developers can publish their blog posts and comment on other developer's posts as well. When the user visit the site for the first time, they will be presented with the homepage which includes existing blog posts. Also, the user can see the navigation links for the homepage and the dashboard and the option to sign up or log in. The first time user can sign up with their user name and email and password. Once the user sign up or log in, they can see their dashboard where they can create the new blogs and their existing blog. They can also click the links for their existing blog to edit or click the delete button to delete the blog. When the user click the home button on the navigation bar, they can see all the blogs and also they can click each blog link to see the comments or comments. To comment a blog, the user need to log in.   
 
@@ -132,5 +131,7 @@ See LICENSE.txt for more information.
 Ayako Woollan - ayako.woollan@gmail.com
 
 Project Link: [https://github.com/ayacomputer/14-MVC-Tech-Blog](https://github.com/ayacomputer/14-MVC-Tech-Blog)
+
+Heroku Deployed: [https://ayacomputer-mvc-tech-blog.herokuapp.com/](https://ayacomputer-mvc-tech-blog.herokuapp.com/)
 
 <p align="right">(<a href="#top">back to top</a>)</>
