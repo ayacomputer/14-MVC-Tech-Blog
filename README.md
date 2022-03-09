@@ -87,6 +87,7 @@ To get a local copy up and running follow these simple example steps.
 
  2: Make sure that .env file has your DB password
 
+ Please do not forget to write your secret at DB_SECRET 
  [How to set the env file.](https://drive.google.com/file/d/12BokJA0Ah2Hz0zT_xI3t1wDmCcbFK3n4/view)
 
  3: Install npm packages
