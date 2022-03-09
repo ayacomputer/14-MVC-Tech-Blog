@@ -66,9 +66,9 @@ This is a CMS-style tech blog site where developers can publish their blog posts
 
 ## Usage
 
-  Following image shows this application's functionality(questions).
+Click the following link to see the deployed application.
 
-![This is an image of the product.](./assets/product.png)
+Heroku: [https://ayacomputer-mvc-tech-blog.herokuapp.com/](https://ayacomputer-mvc-tech-blog.herokuapp.com/)
 
 <p align ="right">(<a href="#top">back to top</a>)</>
 
@@ -132,6 +132,5 @@ Ayako Woollan - ayako.woollan@gmail.com
 
 Project Link: [https://github.com/ayacomputer/14-MVC-Tech-Blog](https://github.com/ayacomputer/14-MVC-Tech-Blog)
 
-Heroku Deployed: [https://ayacomputer-mvc-tech-blog.herokuapp.com/](https://ayacomputer-mvc-tech-blog.herokuapp.com/)
 
 <p align="right">(<a href="#top">back to top</a>)</>
