@@ -68,6 +68,10 @@ This is a CMS-style tech blog site where developers can publish their blog posts
 
 Click the following link to see the deployed application.
 
+If you log in as Minnie Mouse,  
+email: mimo@gmail.com | password: password23456
+You can see the edit and delete buttons for existing blogs and comments.
+
 Heroku: [https://ayacomputer-mvc-tech-blog.herokuapp.com/](https://ayacomputer-mvc-tech-blog.herokuapp.com/)
 
 <p align ="right">(<a href="#top">back to top</a>)</>
