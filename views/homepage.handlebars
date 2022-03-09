@@ -2,8 +2,8 @@
 <div class="col-md-10 col-lg-8 col-xl-7">
     <hr class="my-4" />
     <div class="blog-preview">
-        <a href="/blog/{{blog.id}}">
-            <h2 class="title">{{title}}</h2>
+        <a href="/blog/{{blog.id}}" class="text-decoration-none" />
+        <h3 class="title">{{title}}</h3>
         </a>
         <p class="post_meta">
             Posted by {{user.name}} on {{format_date date_created}}
@@ -11,9 +11,12 @@
         <div>
             {{content}}
         </div>
-        <a href="/blog/{{blog.id}}"><button class="btn btn-primary mt-2 float-right">{{blog.comments.length}}
-                comments</button></a></p>
-        </a>
+        <div class="text-right">
+            <a href="/blog/{{blog.id}}"><button class="btn btn-outline-dark mt-2">{{blog.comments.length}}
+                    comments</button></a></p>
+            </a>
+        </div>
+
     </div>
 
 </div>
