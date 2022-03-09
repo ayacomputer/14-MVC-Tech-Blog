@@ -15,7 +15,7 @@ router.get('/:id/edit', async (req, res) => {
             ],
         });
         const updatingComment = updatingCommentData.get({ plain: true });
-        console.log(updatingComment);
+        console.table(updatingComment);
         res.render('updateComment', {
             ...updatingComment,
             logged_in: req.session.logged_in

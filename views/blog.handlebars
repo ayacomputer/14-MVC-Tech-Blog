@@ -21,15 +21,19 @@
         {{/if}}
 
         <div class="comment-list">
+
+            {{#unless logged_in}}
             <hr class="my-4" />
             <p>To comment, please sign in or log in.</p>
+            {{/unless}}
             {{#if comments.length}}
             {{#each comments as |comment|}}
             <hr class="my-4" />
             <section class="comment_container row">
                 <div class="col-md-10">
                     <div class="comment_info">
-                        {{user.name}} on {{format_date date_commented}}
+                        <b>{{user.name}} on {{format_date date_commented}}</b>
+
                     </div>
                     <div class="comment">
                         {{comment.comment}}

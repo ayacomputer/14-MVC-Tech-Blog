@@ -56,12 +56,12 @@ This is a CMS-style tech blog site where developers can publish their blog posts
 
  ## Built With
 * [Node.js](https://nodejs.org/) 
-* [Express.js](https://expressjs.org/) 
-* [Handlebars.js] (https://)
-* [MySQL] (https://)
-* [Sequelize] (https://)
-* [dotenv] (https://)
-* [dotenv] (https://)
+* [MySQL2](https://www.npmjs.com/package/mysql2) 
+* [Sequelize](https://www.npmjs.com/package/sequelize) 
+* [dotenv](https://www.npmjs.com/package/dotenv) 
+* [express-handlebars] (https://www.npmjs.com/package/express-handlebars)
+
+
 
 <p align = "right"> (<a href="#top">back to top</a>)</>
 
