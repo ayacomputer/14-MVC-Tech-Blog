@@ -59,7 +59,7 @@ This is a CMS-style tech blog site where developers can publish their blog posts
 * [MySQL2](https://www.npmjs.com/package/mysql2) 
 * [Sequelize](https://www.npmjs.com/package/sequelize) 
 * [dotenv](https://www.npmjs.com/package/dotenv) 
-* [express-handlebars] (https://www.npmjs.com/package/express-handlebars)
+* [handlebars](https://www.npmjs.com/package/express-handlebars)
 
 
 
@@ -76,6 +76,7 @@ This is a CMS-style tech blog site where developers can publish their blog posts
 ## Getting Started
 
 To get a local copy up and running follow these simple example steps.
+
 ## Installation
 
  1: The application will be invoked by using the following command:
