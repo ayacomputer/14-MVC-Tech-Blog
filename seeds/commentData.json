@@ -28,5 +28,15 @@
         "user_id": "1",
         "blog_id": "1",
         "comment": "Nicely said!"
+    },
+    {
+        "user_id": "3",
+        "blog_id": "4",
+        "comment": "Can't wait to talk about this with you!"
+    },
+    {
+        "user_id": "4",
+        "blog_id": "3",
+        "comment": "Wow. Nice to know!"
     }
 ]

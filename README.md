@@ -74,6 +74,23 @@ You can see the edit and delete buttons for existing blogs and comments.
 
 Heroku: [https://ayacomputer-mvc-tech-blog.herokuapp.com/](https://ayacomputer-mvc-tech-blog.herokuapp.com/)
 
+
+Login Preview:
+![login](./public/assets/login.png);
+
+Dashboard (create new blog, edit or delete old blog):
+![dashboard](./public/assets/dashboard.png);
+
+Edit Blog:
+![editBlog](./public/assets/editBlog.png);
+
+
+Comment:
+![comment](./public/assets/comment.png);
+
+Edit & Delete Comment:
+![editcomment](./public/assets/editcomment.png)
+
 <p align ="right">(<a href="#top">back to top</a>)</>
 
 ## Getting Started
