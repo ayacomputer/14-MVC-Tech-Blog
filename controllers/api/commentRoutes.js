@@ -30,6 +30,30 @@ router.post('/', withAuth, async (req, res) => {
     }
 });
 
+router.put('/:id', withAuth, async (req, res) => {
+    console.log("req.body:", req.body, "req.param.id:", req.params.id);
+    try {
+        const updatedCommentData = await Comment.update({
+            comment: req.body.comment,
+            // blog_id: req.body.blog_id
+        },
+            {
+                where: {
+                    id: req.params.id
+                }
+            });
+
+        if (!updatedCommentData) {
+            res.status(404).json({ message: 'No comment found with this id!' });
+            return;
+        }
+        res.status(200).json(updatedCommentData);
+    } catch (err) {
+        console.log(err);
+        res.status(400).json(err);
+    }
+});
+
 router.delete('/:id', withAuth, async (req, res) => {
 
     try {

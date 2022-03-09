@@ -17,7 +17,7 @@ router.post('/', withAuth, async (req, res) => {
 });
 
 
-router.put('/edit/:id', withAuth, async (req, res) => {
+router.put('/:id', withAuth, async (req, res) => {
     try {
         const updatedBlogData = await Blog.update({
             title: req.body.title,

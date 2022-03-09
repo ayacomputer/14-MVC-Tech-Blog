@@ -1,0 +1,23 @@
+<div>
+    <div class="text-center blog-container">
+        Edit your comment:
+        <div class="text-left">{{comment}}</div>
+        <p>Posted by you on {{format_date date_commented}}</p>
+    </div>
+
+    <div class="comments">
+        <div class="form-group align-items-center">
+            <form class="update-comment-form">
+                <div class="form-group">
+                    <label for="comment-input" class="col-form-label">Comment:</label>
+                    <textarea class="form-control" id="comment-input" rows="5">{{comment}}</textarea>
+                </div>
+                <div>
+                    <button class="btn btn-primary mb-2 updateBtn" type="submit"
+                        data-id="{{comment.id}}">UPDATE</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src=" /js/updateComment.js"></script>
