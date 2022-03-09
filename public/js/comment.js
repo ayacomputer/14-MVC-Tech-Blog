@@ -3,21 +3,22 @@ const commentFormHandler = async (event) => {
 
     const comment = document.querySelector('#comment-input').value.trim();
 
+
     var str = window.location.pathname;
-    var n = str.split('/');
-    var comment_id = n[n.length - 2];
+    var n = str.lastIndexOf('/');
+    var blog_id = str.substring(n + 1);
 
     if (comment) {
         const response = await fetch('/api/comments', {
             method: 'POST',
-            body: JSON.stringify({ comment, comment_id }),
+            body: JSON.stringify({ comment, blog_id }),
             headers: {
                 'Content-Type': 'application/json',
             },
         });
 
         if (response.ok) {
-            document.location.replace(`/blog/${comment_id}`);
+            document.location.replace(`/blog/${blog_id}`);
         } else {
             alert('Failed to post comment');
         }

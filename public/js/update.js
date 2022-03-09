@@ -5,8 +5,8 @@ const updateHandler = async (event) => {
     const content = document.querySelector('#content').value.trim();
 
     var str = window.location.pathname;
-    var n = str.lastIndexOf('/');
-    var blog_id = str.substring(n + 1);
+    var n = str.split('/');
+    var blog_id = n[n.length - 2];
 
     if (title && content) {
         const response = await fetch(`/api/blogs/${blog_id}`, {
