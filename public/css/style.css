@@ -39,8 +39,20 @@ a {
   color: var(--lightColor);
 }
 
+.dark-color {
+  color: var(--darkColor);
+}
+
+.btn-primary {
+  background-color: var(--darkColor);
+}
+
+.btn-danger {
+  background-color: var(--secondColor);
+}
+
 .blog-background {
-    background-color: rgba(225, 225, 225, 0.70);
+    background-color: rgba(225, 225, 225, 0.75);
     border-radius: var(--borderRadius);
     padding-top: 3rem;
     padding-bottom: 3rem; 
