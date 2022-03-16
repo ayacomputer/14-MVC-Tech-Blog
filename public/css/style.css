@@ -1,6 +1,6 @@
 :root {
     --darkColor: rgb(30, 35, 39);
-    --lightColor: rgb(235, 217, 183);
+    --lightColor: rgb(205, 222, 228);
     --primeColor: rgb(31, 110, 110);
     --secondColor:rgba(175, 59, 59, 0.945);
     --thirdColor: rgba(78, 78, 73, 0.87);
@@ -15,15 +15,36 @@
     background-color: var(--primeColor);
     color: var(--darkColor);
   }
+  
 
-   body, nav, a, .nav-link {
+  body {
+    color: var(--darkColor);
     font-family: 'Nunito','Outfit', sans-serif;
-    /* font-size: 62.5%; */
-    /* background-color: var(--darkColor);  */
-    /* color: var(--lightColor);  */
+    box-sizing: border-box;
+    background-image: url(../assets/background.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }  
+a {
+    color: var(--darkColor);
+    font-family: 'Nunito','Outfit', sans-serif;
     box-sizing: border-box;
 }
 
+.icon-dark {
+  color: var(--darkColor);
+}
+
+.light-color, .navbar {
+  color: var(--lightColor);
+}
+
+.blog-background {
+    background-color: rgba(225, 225, 225, 0.70);
+    border-radius: var(--borderRadius);
+    padding-top: 3rem;
+    padding-bottom: 3rem; 
+  }
 /* body {
     font-family: 'Nunito','Outfit', sans-serif;
     font-size: 1.75rem;
@@ -31,8 +52,4 @@
      text-align: center; 
      margin: 0; 
    }
-
-.title {
-    font-family: 'Comforter Brush','Nunito','Outfit', sans-serif;
-  color: var(--darkColor); 
-}   */
+/*  */
